@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuistion"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quistions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="What country does this flag belong to?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/Flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/jordan"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <ProgressBar
+                android:id="@+id/prog"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:progress="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:paddingEnd="40dp"
+                />
+            <TextView
+                android:id="@+id/SHOW_PROGRESS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:textAlignment="textEnd"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ops1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextborder"
+            android:padding="20dp"
+            android:text="Jordan"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/ops2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextborder"
+            android:padding="20dp"
+            android:text="Jordan"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/ops3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextborder"
+            android:padding="20dp"
+            android:text="Jordan"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/ops4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextborder"
+            android:padding="20dp"
+            android:text="Jordan"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_subm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9d41fd"
+            android:text="Submit"
+
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+</ScrollView>
